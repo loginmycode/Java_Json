@@ -14,6 +14,7 @@ public class StartTest {
 		 emp= new EmpBean("Modi", 66, "modi@.co.in",sdf.parse("17/09/1951") );
 		 emp= new EmpBean("Modi", 66, "modi@.co.in",sdf.parse("17/09/1951") );
 		 emp= new EmpBean("Modi", 66, "modi@.co.in",sdf.parse("17/09/1951") );
+		 emp= new EmpBean("Sachin",42,"sachin@com", sdf.parse("24/04/1973"),"Mumbai");
 		Service ser= new Service();
 		ser.adddetails(emp);
 		

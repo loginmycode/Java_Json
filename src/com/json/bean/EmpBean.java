@@ -9,7 +9,7 @@ public class EmpBean {
 	
 	private String email;
 	private Date dob;
-	
+	private String address;
 	public EmpBean() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -20,6 +20,20 @@ public class EmpBean {
 		this.age = age;
 		this.email = email;
 		this.dob = dob;
+	}
+	public EmpBean(String name, int age, String email, Date dob, String address) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.email = email;
+		this.dob = dob;
+		this.address = address;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
 	}
 	public String getName() {
 		return name;
@@ -45,9 +59,11 @@ public class EmpBean {
 	public void setDob(Date dob) {
 		this.dob = dob;
 	}
-	
 	@Override
 	public String toString() {
-		return "EmpBean [name=" + name + ", age=" + age + ", email=" + email + ", dob=" + dob + "]";
+		return "EmpBean [name=" + name + ", age=" + age + ", email=" + email + ", dob=" + dob + ", address=" + address
+				+ "]";
 	}
+	
+	
 }
